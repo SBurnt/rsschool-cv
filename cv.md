@@ -34,7 +34,7 @@ HTML5, CSS3, JavaScript, ReactJS, Git, Sass (SCSS), BEM, Pug, Webpack, Gulp
 - 2016 - Educational courses of Computer Academy "Step"
 - 2017 - Online educational courses "JavaRush"
 - 2018 - IT-school Myfreedom. Front-end Developer
-- 2019 - The Rolling Scopes. Front-end Developer
+- 2019 - RS2018Q3. Front-end Developer (Position: 157, Score: 780)
 
 ### Language level:
 
