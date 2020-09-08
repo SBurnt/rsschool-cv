@@ -1,1 +1,1 @@
-# rsschool-cv
+# [link to the gh-pages](https://sburnt.github.io/rsschool-cv/cv)
