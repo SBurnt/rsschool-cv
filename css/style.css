@@ -1,0 +1,176 @@
+html {
+  height: 100%;
+}
+
+/* специально для IE */
+
+* html header {
+  height: 100%;
+}
+
+body {
+  height: 99%;
+
+  font: 400 14px "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #979899;
+
+  background: #2d2e2e;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #a4a5a6;
+}
+
+
+/* ----- HEADER ----- */
+
+/* SECTION CONTACTS */
+
+.section-contacts {
+  display: flex;
+  min-height: 100%;
+
+  border-bottom: solid 1px #979899;
+}
+
+.contacts-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+
+  background: #202020;
+}
+
+.contacts-avatar-img {
+  width: 230px;
+
+  border-radius: 50%;
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin-left: 75px;
+}
+
+.contacts-info-name {
+  margin-bottom: 40px;
+}
+
+.applicant-name {
+  font-size: 50px;
+}
+
+.title-first-name {
+  display: block;
+}
+
+.title-last-name {
+  font-weight: 700;
+  color: #e0a80d;
+  text-transform: uppercase;
+}
+
+.job-title {
+  padding-top: 15px;
+
+  font-size: 20px;
+}
+
+.contacts-icons-socialnet a {
+  display: inline-flex;
+  width: 52px;
+  height: 52px;
+  padding-bottom: 15px;
+}
+
+.facebook {
+  background: url(../img/icons-socialnet.png) no-repeat 0 0;
+}
+
+.linkedin {
+  background: url(../img/icons-socialnet.png) no-repeat -115px 0;
+}
+
+.mail {
+  background: url(../img/icons-socialnet.png) no-repeat -173px 0;
+}
+
+h3 {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.contact-telegram,
+.contact-location,
+.contact-phone {
+  padding-bottom: 15px;
+}
+
+.contact-telegram a {
+  color: #a4a5a6;
+  text-decoration: none;
+}
+
+/* ----- MAIN ----- */
+
+.section-summary,
+.section-skills,
+.section-profiles,
+.section-language,
+.section-education {
+  display: flex;
+  min-height: 130px;
+
+  border-bottom: solid 1px #979899;
+}
+
+.summary-heading,
+.skills-heading,
+.profiles-heading,
+.language-heading,
+.education-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 30%;
+  padding: 20px 10px 0 0;
+}
+
+.summary-text,
+.skills-text,
+.profiles-text,
+.language-text,
+.education-text {
+  width: 70%;
+  padding: 20px 0 20px 75px;
+
+  background: #202020;
+}
+
+.footer {
+  padding: 20px 0;
+
+  text-align: center;
+
+  background: #202020;
+}
+
+.profiles-text img {
+  width: 50px;
+  margin-right: 10px;
+}
