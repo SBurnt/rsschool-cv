@@ -12,7 +12,7 @@
 <body>
   <header class="header wrapper section-contacts">
     <div class="contacts-avatar">
-      <img class="contacts-avatar-img" src="./img/avator.jpg" alt="image avatar" />
+      <img class="contacts-avatar-img" src="./img/avator.png" alt="image avatar" />
     </div>
     <div class="contacts-info">
       <div class="contacts-info-name">
@@ -23,32 +23,38 @@
         <p class="job-title">Junior Front-End Developer</p>
       </div>
       <div>
-        <div class="contacts-icons-socialnet">
-          <a class="facebook" href="https://www.facebook.com/profile.php?id=1709178834" target="_blank"></a>
-          <a class="linkedin" href="https://www.linkedin.com/in/siarhei-pashkevich-0857a7109/" target="_blank"></a>
-          <a class="mail" href="mailto:zip2004zip@mail.ru" target="_blank"></a>
-        </div>
-        <div class="contacts-info-data">
-          <div class="contact-location">
-            <h3>Location:</h3>
-            Minsk, Belarus
-          </div>
-          <div class="contact-phone">
-            <h3>Number phone:</h3>
-            +375292017076
-          </div>
-          <div class="contact-telegram">
-            <h3>Telegram:</h3>
-            <a href="https://t.me/SNotP">@SNotP</a>
-          </div>
-        </div>
+        <ul class="contacts-icons-socialnet">
+          <li>
+            <a class="facebook" href="https://www.facebook.com/profile.php?id=1709178834" target="_blank"></a>
+          </li>
+          <li>
+            <a class="linkedin" href="https://www.linkedin.com/in/siarhei-pashkevich-0857a7109/" target="_blank"></a>
+          </li>
+          <li>
+            <a class="mail" href="mailto:zip2004zip@mail.ru" target="_blank"></a>
+          </li>
+        </ul>
+        <ul class="contacts-info-data">
+          <li class="contact-location">
+            <span>Location:</span>
+            <address>Minsk, Belarus</address>
+          </li>
+          <li class="contact-phone">
+            <span>Number phone:</span>
+            <a href="tel:+375292017076">+375292017076</a>
+          </li>
+          <li class="contact-telegram">
+            <span>Telegram:</span>
+            <a href="https://t.me/SNotP" target="_blank">@SNotP</a>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
   <main class="main wrapper">
     <section class="section-summary">
       <div class="summary-heading">
-        <h3>Summary</h3>
+        <h2>Summary</h2>
         <p>What I am all about.</p>
       </div>
       <div class="summary-text">
@@ -70,62 +76,95 @@
     </section>
     <section class="section-skills">
       <div class="skills-heading">
-        <h3>Skills</h3>
+        <h2>Skills</h2>
         <p>Progress bars, anyone?</p>
       </div>
-      <div class="skills-text">
-        <p>
-          HTML5, CSS3, JavaScript, ReactJS, Git, Photoshop
-        </p>
-      </div>
+      <ul class="skills-text">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>ReactJS</li>
+        <li>Git</li>
+        <li>Sass (SCSS)</li>
+        <li>BEM</li>
+        <li>Webpack</li>
+      </ul>
     </section>
     <section class="section-profiles">
       <div class="profiles-heading">
-        <h3>Profiles</h3>
+        <h2>Profiles</h2>
         <p>Busy as usual.</p>
       </div>
-      <div class="profiles-text">
-        <a href="https://github.com/SBurnt"><img src="img/github-logo.png" alt="github profile" /></a>
-        <a href="https://www.codewars.com/users/zip2004zip"><img src="img/codewars-logo.png"
-            alt="codewars profiles" /></a>
+      <ul class="profiles-text">
+        <li>
+          <a href="https://github.com/SBurnt" target="_blank">
+            <img src="img/github-logo.png" alt="img github profile" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.codewars.com/users/zip2004zip" target="_blank">
+            <img src="img/codewars-logo.png" alt="img codewars profiles" />
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="section-code">
+      <div class="code-heading">
+        <h2>Code</h2>
+        <p>Sample code</p>
+      </div>
+      <div class="code-text">
+        <pre class="hljs">
+          <code>
+            <span class="hljs-keyword">const</span> mobMenu = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'.header__inner'</span>);
+            <span class="hljs-keyword">const</span> burger = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'.js-burger'</span>);
+          
+            burger.addEventListener(<span class="hljs-string">'click'</span>, () =&gt; {
+              mobMenu.classList.add(<span class="hljs-string">'open'</span>);
+            });
+          </code>
+        </pre>
       </div>
     </section>
-    <section class="section-experience"></section>
     <section class="section-education">
       <div class="education-heading">
-        <h3>Education</h3>
+        <h2>Education</h2>
+        <p>Distance traveled</p>
       </div>
-      <div class="education-text">
-        <p>
-          2011 - The state educational establishment «Institute for Command
-          Engineers» of the Ministry of Emergency Situations of the Republic
-          of Belarus (ICE)
-        </p>
-        <p>
-          Senior Engineer of Supervision and Prevention of emergencies at
-          underground objects
-        </p>
-        <p>2016 - Educational courses of Computer Academy "Step"</p>
-        <p>2016 - Online educational courses "JavaRush"</p>
-        <p>2018 - IT-school Myfreedom. Front-end Developer</p>
-        <p>2019 - The Rolling Scopes. Front-end Developer (Position: 157, Score: 780)</p>
-      </div>
+      <ul class="education-text">
+        <li>
+          <p>
+            2011 - The state educational establishment «Institute for Command
+            Engineers» of the Ministry of Emergency Situations of the Republic
+            of Belarus (ICE)
+          </p>
+        </li>
+        <li>
+          <p>2018 - IT-school Myfreedom. Front-end Developer</p>
+        </li>
+        <li>
+          <p>2019 - The Rolling Scopes. Front-end Developer (Position: 157, Score: 780)</p>
+        </li>
+      </ul>
     </section>
     <section class="section-language">
       <div class="language-heading">
-        <h3>Language</h3>
+        <h2>Language</h2>
         <p>What I am all about.</p>
       </div>
-      <div class="language-text">
-        <p>
-          Russian<br />
-          English (A1)
-        </p>
-      </div>
+      <ul class="language-text">
+        <li>Russian</li>
+        <li>English (A2)</li>
+      </ul>
     </section>
   </main>
   <footer class="footer wrapper">
-    <p>&copy; 2020. Made with ❤ and CSS Flexbox.</p>
+    <div class="rss__img-wrap">
+      <a href="https://rs.school/js/">
+        <img class="rss__img" src="./img/rs_school_js.svg" alt="logo rsschool">
+      </a>
+    </div>
+    <p>&copy; <time>2021</time>. Made with ❤ and CSS Flexbox.</p>
   </footer>
 </body>
 
