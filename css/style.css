@@ -1,0 +1,320 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+html * {
+  box-sizing: border-box;
+}
+
+/* специально для IE */
+
+* html header {
+  height: 100%;
+}
+
+body {
+  height: 99%;
+
+  font: 400 14px "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #979899;
+
+  background: #2d2e2e;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #a4a5a6;
+}
+
+/* ----- HEADER ----- */
+
+/* SECTION CONTACTS */
+
+.section-contacts {
+  display: flex;
+  min-height: 100%;
+
+  border-bottom: solid 1px #979899;
+}
+
+
+
+.contacts-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+
+  background: #202020;
+}
+
+.contacts-avatar-img {
+  width: 230px;
+
+  background-color: #d4d4d4;
+  border-radius: 50%;
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin-left: 75px;
+}
+
+.contacts-info-name {
+  margin-bottom: 40px;
+}
+
+.applicant-name {
+  font-size: 50px;
+}
+
+.title-first-name {
+  display: block;
+}
+
+.title-last-name {
+  font-weight: 700;
+  color: #e0a80d;
+  text-transform: uppercase;
+}
+
+.job-title {
+  padding-top: 15px;
+
+  font-size: 20px;
+}
+
+.contacts-icons-socialnet {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.contacts-icons-socialnet li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.contacts-icons-socialnet a {
+  display: inline-flex;
+  width: 52px;
+  height: 52px;
+}
+
+.facebook {
+  background: url(../img/icons-socialnet.png) no-repeat 0 0;
+}
+
+.linkedin {
+  background: url(../img/icons-socialnet.png) no-repeat -115px 0;
+}
+
+.mail {
+  background: url(../img/icons-socialnet.png) no-repeat -173px 0;
+}
+
+h2,
+h3 {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.contacts-info-data li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.contact-telegram,
+.contact-location,
+.contact-phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-telegram span,
+.contact-location span,
+.contact-phone span {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.contact-telegram a,
+.contact-phone a {
+  color: #a4a5a6;
+  text-decoration: none;
+}
+
+@media (max-width: 1023.98px) {
+  .section-contacts {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .contacts-avatar {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .contacts-avatar-img {
+    width: 130px;
+  }
+
+  .contacts-info {
+    width: 100%;
+    margin-left: 0;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .applicant-name {
+    font-size: 40px;
+  }
+}
+
+/* ----- MAIN ----- */
+
+.section-summary,
+.section-skills,
+.section-profiles,
+.section-language,
+.section-education,
+.section-code {
+  display: flex;
+
+  border-bottom: solid 1px #979899;
+}
+
+.summary-heading,
+.skills-heading,
+.profiles-heading,
+.language-heading,
+.education-heading,
+.code-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 30%;
+  padding: 20px 10px 20px 0;
+}
+
+.summary-text,
+.skills-text,
+.profiles-text,
+.language-text,
+.education-text,
+.code-text {
+  width: 70%;
+  padding: 20px 20px 20px 75px;
+
+  background: #202020;
+}
+
+.skills-text,
+.profiles-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-text li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.language-text li:not(:last-child),
+.education-text li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.footer {
+  padding: 20px 0;
+
+  text-align: center;
+
+  background: #202020;
+}
+
+.profiles-text img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.hljs {
+  display: block;
+  padding: 0.5em;
+  overflow-x: auto;
+
+  color: #a4a5a6;
+
+  background: #202020;
+}
+
+.hljs-keyword {
+  color: rgb(252, 194, 140);
+}
+
+.hljs-built_in {
+  color: rgb(255, 255, 170);
+}
+
+.hljs-string {
+  color: rgb(162, 252, 162);
+}
+
+@media (max-width: 1023.98px) {
+  .summary-text,
+  .skills-text,
+  .profiles-text,
+  .language-text,
+  .education-text,
+  .code-text {
+    padding: 20px 20px 20px 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-summary,
+  .section-skills,
+  .section-profiles,
+  .section-language,
+  .section-education,
+  .section-code {
+    flex-direction: column;
+  }
+
+  .summary-heading,
+  .skills-heading,
+  .profiles-heading,
+  .language-heading,
+  .education-heading,
+  .code-heading {
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .summary-text,
+  .skills-text,
+  .profiles-text,
+  .language-text,
+  .education-text,
+  .code-text {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.rss__img-wrap {
+  width: 100px;
+  margin: 0 auto 5px;
+}
